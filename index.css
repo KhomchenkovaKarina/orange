@@ -1,0 +1,622 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('fonts/PTSans-Bold.woff2') format('woff2'),
+        url('fonts/PTSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('fonts/PTSans-Regular.woff2') format('woff2'),
+        url('fonts/PTSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+        url('fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.wrapper {
+    width: 62.5vw;
+    margin: 0 auto;
+}
+
+/* -----------------HEADER------------------------------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.52vh;
+    padding-bottom: 3.52vh;
+}
+
+.header__left, .header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__title {
+    margin-left: 1.35vw;
+    font-family: 'PT Sans';
+    font-size: 1.6vh;
+    /* расчет относительно высоты */
+    line-height: 1.85vh;
+}
+
+.header__phone {
+    margin-left: 0.47vw;
+    font-family: 'PT Sans';
+    font-size: 1.48vh;
+    line-height: 1.92vh;
+}
+
+.header__search {
+    margin-left: 1.6vw;
+    padding: 0.5vw;
+}
+
+/* -------------------DESCRIPTION ----------------*/
+.description {
+    margin-top: 4.35vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description__left {
+    padding-top: 4.26vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description__title {
+    font-size: 5.55vh;
+    line-height: 5.93vh;
+    color: #fff;
+    font-family: 'Gilroy';
+}
+
+.description__menu {
+    max-width: 19.53vw;
+    margin-top: 5.37vh;
+}
+
+.description__menu-item {
+    margin-left: 0.78vw;
+    /* #почему не пэдинг? */
+}
+
+.description__menu-content>span {
+    font-size: 1.89h;
+    line-height: 1.89h;
+    margin-left: 0.78vw;
+    font-family: 'PT Sans';
+}
+
+.description__company, .description__product {
+    margin-bottom: 2.22vh;
+}
+
+.description__product, .description__goods {
+    margin-top: 2.22vh;
+}
+
+.description-menu-line {
+    height: 1px;
+    background: linear-gradient(to right, #4B4B4B, #26262500);
+}
+
+.description__menu-footer {
+    display: flex;
+    margin-bottom: 2.96vh;
+}
+
+.description__menu-footer-item {
+    width: 31px;
+    height: 2px;
+}
+
+.description__menu-footer-item:not(:first-child) {
+    margin-left: 0.93vh;
+}
+
+.description__right {
+    position: relative;
+}
+
+.price-button-small{
+    padding: 0.74vh;
+    font-size: 1.48vh;
+    line-height: 1.85vh;
+}
+
+.price-button-big{
+    font-size: 2.22vh;
+    line-height: 2.22vh;
+    padding: 1.38vh;
+}
+
+.price-button {
+    font-family: 'PT Sans';
+    background-color: #FF7028;
+    color: white;
+}
+
+.description__price {
+    font-family: 'PT Sans';
+    font-size: 2.22vh;
+    line-height: 2.22vh;
+    padding: 1.38vh;
+    background-color: #FF7028;
+    color: white;
+    position: absolute;
+    top: 28.43vh;
+    left: 6.3vh;
+}
+
+.description__tap {
+    max-height: 51.1vh;
+    display: block;
+}
+
+/* -----------------------DESCRIPTION-INTRO--------------- */
+
+.description-intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-intro>div {
+    margin-top: 7.59vh;
+    margin-bottom: 7.59vh;
+}
+
+.intro-orange {
+    font-family: 'PT Sans';
+    font-size: 1.6vh;
+    line-height: 2.5vh;
+    max-width: 30.73vw;
+}
+
+.intro-orange-content {
+    display: flex;
+    align-items: center;
+}
+
+.intro-feature-content-title {
+    font-weight: bold;
+    font-family: 'PT Sans';
+}
+
+.intro-first-letter {
+    font-family: 'PT Sans';
+    font-size: 5vh;
+}
+
+.intro-first-title {
+    font-weight: bold;
+}
+
+.intro-features {
+    max-width: 20.5vw;
+}
+
+.intro-feature {
+    display: flex;
+    align-items: start;
+}
+
+.intro-feature-content {
+    font-family: 'PT Sans';
+    font-size: 1.38vh;
+    line-height: 1.85vh;
+    color: #7B7B7B;
+    margin-left: 1.48vw;
+    min-width: 13.07vw;
+}
+
+.intro-feature-content-title {
+    color: #151716;
+    font-size: 1.48vh;
+}
+
+/* ----------------PRODUCTS------------------------------ */
+
+.products-container {
+    margin-top: 7.4vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9.26vh;
+}
+
+.products-title {
+    font-family: 'Gilroy';
+    font-size: 2.96vh;
+    line-height: 3.33vh;
+    color: #151716;
+}
+
+.products {
+    display: flex;
+    margin-top: 2.59vh;
+    justify-content: space-between;
+}
+
+.product>img {
+    min-width: 14.95vw;
+}
+
+.product {
+    position: relative;
+}
+
+.product-name {
+    color: white;
+    font-weight: bold;
+    font-family: 'Gilroy';
+    font-size: 1.85vh;
+    line-height: 2.3vh;
+    position: absolute;
+    bottom: 2vh;
+    left: 1.25vw;
+}
+
+/* ----------------COLLECTIONS---------------------------- */
+
+.collections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collections-img>img {
+    max-height: 61.57vh;
+    display: block;
+}
+
+.collections-img {
+    position: relative;
+}
+
+.collections-content {
+    margin-left: 19.06vw;
+    margin-right: 3.64vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.collections-title {
+    margin-top: 6.2vh;
+    font-family: 'Gilroy' !important;
+    font-size: 2.96vh !important;
+    line-height: 3.33vh !important;
+    color: white !important;
+}
+
+.collections-top>p {
+    color: #BEBEBE;
+    font-family: 'PT Sans';
+    font-size: 1.6vh;
+    line-height: 2.59vh;
+}
+
+.collections-all {
+    margin-top: 2.4vh;
+    margin-bottom: 3.5vh;
+}
+
+.collections-all>span {
+    color: #BEBEBE;
+    font-size: 1.48vh;
+    line-height: 2.22vh;
+    font-family: 'PT Sans';
+    margin-left: 0.78vw;
+}
+
+.collections-img-title {
+    font-family: 'PT Sans';
+    font-weight: bold;
+    font-size: 1.6vh;
+    line-height: 3.2vh;
+    color: white;
+    letter-spacing: 2px;
+    position: absolute;
+}
+
+.collections-button {
+    position: absolute;
+    top: 10.55vh;
+    left: 4.11vw;
+}
+
+.collections-img-title {
+    position: absolute;
+    top: 7.04vh;
+    left: 4.11vw;
+}
+
+/* --------------------GOODS------------------------- */
+
+
+.goods-title {
+    font-family: 'Gilroy';
+    font-size: 2.96vh;
+    line-height: 3.33vh;
+    margin-top: 7.4vh;
+    margin-bottom: 1.85vh;
+}
+
+.goods-items {
+    display: flex;
+}
+
+.goods-items>* {
+    border: 1px solid #ECECEC;
+}
+
+.good {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.good-img>img {
+    max-height: 17.4vh;
+    margin: 1.85vh;
+}
+
+.good-img {
+    display: flex;
+    align-items: start;
+}
+
+.good-img>span {
+    margin: 1.1vh;
+    color: white;
+}
+
+.good-price-normal {
+    color: #000;
+    font-size:  1.85vh;
+    line-height:  1.85vh;
+    font-weight: bold;
+}
+
+.good-price {
+    margin-left: 1.85vh;
+    margin-bottom: 2.2vh;
+    font-family: 'PT Sans';
+    font-size: 1.48vh;
+    line-height: 1.48vh;
+    color: #A5A5A5;
+    max-width: 13.5vw;
+}
+
+.good-description {
+    font-family: 'PT Sans';
+    font-size: 1.48vh;
+    line-height: 2vh;
+    margin: 1.85vh;
+}
+
+.good-price-disc{
+    text-decoration: line-through;
+}
+
+/* ----------------ADVANTAGES-------------------- */
+
+.advantages {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages-title {
+    margin: 0 auto;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 2.96vh;
+    line-height: 3.33vh;
+    margin-top: 6.48vh;
+    margin-bottom: 5vh;
+}
+
+.advantages-items {
+    margin: 0 auto;
+    margin-bottom: 7.4vh;
+    display: flex;
+}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 14.68vw;
+}
+
+.advantage img {
+    max-height: 8.3vh;
+}
+
+.advantage-lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.advantage-title {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 1.85vh;
+    line-height: 2.13vh;
+    margin-top: 2.22vh;
+}
+
+
+.advantage-description {
+    font-weight: 400;
+    font-family: 'PT Sans';
+    font-size: 1.38vh;
+    line-height: 1.85vh;
+    margin-top: 1vh;
+    color: #7B7B7B;
+}
+/*------------------------- ORANGE BOTTOM------------------- */
+
+.orange-bottom-img{
+    width: 100%;
+    display: block;
+}
+
+.orange-bottom{
+    position: relative;
+}
+
+.orange-bottom-text{
+    position: absolute;
+    bottom: 0;
+    left: 18.5vw;
+    width: 62.5vw;
+    background-color:#F6761A;
+    font-family: 'Gilroy';
+    text-align: center;
+    color: white;
+    padding-top: 3.8vh;
+    padding-bottom: 4.35vh;
+    font-size: 2.6vh;
+    line-height: 3.33vh;
+}
+
+/* ----------------------FOOTER---------------------------------- */
+
+.orange-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.orange-footer-wrapper{
+    padding-bottom: 5.18vh;
+    padding-top: 5.55vh;
+}
+
+.orange-upper-margin{
+    margin-top: 1.85vh;
+}
+
+.orange-menu-title{
+    color: white;
+    font-weight: 700;
+    font-family: 'Gilroy';
+    font-size: 1.48vh;
+    line-height: 1.76vh;
+}
+
+.orange-footer-menu-item{
+    color: #BEBEBE;
+    font-family: 'PT Sans';
+    font-size: 1.6vh;
+    line-height: 2.59vh;
+}
+
+.orange-footer-menu-item > span{
+    margin-left: 0.78vw
+}
+
+.orange-copyright{
+    display: flex;
+    justify-content: end;
+    color: #747474;
+    font-size: 1.1vh;
+    line-height: 1.3vh;
+    font-family: 'Roboto';  
+    align-items: center;
+    margin-top: 5.18vh;
+}
+
+.orange-copyright-developed-by{
+    margin-left: 1.25vw;
+    border: 1px solid #494949;
+    padding: 0.625vh 0.74vh;
+}
+
+/* ----------------------BOTTOM----------------------------- */
+
+.bottom-line{
+    border: 1px solid #484848;
+}
+
+.arrow-up{
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-up > img{
+    margin-top: 3.98vh;
+    margin-bottom: 3.98vh;
+}
+
+/* -----------------------COLORS------------------------------- */
+
+.dark-grey-bg {
+    background: #262624;
+}
+
+.orange {
+    color: #FF7028;
+}
+
+.light-gray-1 {
+    color: #BEBEBE;
+}
+
+.gray-border {
+    border: 1px solid #494949;
+}
+
+.gray-back {
+    background-color: #575757;
+}
+
+.light-gray-2 {
+    color: #999999;
+}
+
+.light-gray-back {
+    background-color: #F6F6F6;
+}
+
+.dark-gray-back-2{
+    background-color: #202122;
+}
