@@ -34,7 +34,6 @@
     font-display: swap;
 }
 
-
 body {
     margin: 0;
     padding: 0;
@@ -574,6 +573,8 @@ header {
 
 .bottom-line{
     border: 1px solid #484848;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .arrow-up{
