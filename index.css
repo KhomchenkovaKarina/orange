@@ -49,18 +49,41 @@ body {
 }
 
 /* -----------------HEADER------------------------------------- */
+@media(min-width: 741px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3.52vh;
+        padding-bottom: 3.52vh;
+    }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 3.52vh;
-    padding-bottom: 3.52vh;
+    .header__left, .header__right {
+        display: flex;
+        align-items: center;
+    }
 }
 
-.header__left, .header__right {
-    display: flex;
-    align-items: center;
+@media(max-width: 741px){
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3.52vh;
+        padding-bottom: 3.52vh;
+    }
+
+    .header__left, .header__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__left > *, .header__right > *{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
 }
 
 .header__title {
@@ -84,17 +107,53 @@ header {
 }
 
 /* -------------------DESCRIPTION ----------------*/
-.description {
-    margin-top: 4.35vh;
+
+
+@media (min-width: 1120px){
+    .description {
     display: flex;
     justify-content: space-between;
+    margin-top: 4.35vh;
+    }
+
+    .description__left{
+    padding-top: 4.26vh;
+    }
 }
 
-.description__left {
-    padding-top: 4.26vh;
+@media (max-width: 1120px){
+    .description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    }
+
+    .description__menu{
+        margin: 0 auto;
+    }
+
+    .description___title{
+        text-align: center;
+    }
+
+    .description__menu-footer{
+        margin: 2vh auto;
+    }
+
+    .description__tap{
+        margin: 0 auto;
+    }
+}
+
+
+.description__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description__right {
+    position: relative;
 }
 
 .description__title {
@@ -145,10 +204,6 @@ header {
 
 .description__menu-footer-item:not(:first-child) {
     margin-left: 0.93vh;
-}
-
-.description__right {
-    position: relative;
 }
 
 .price-button-small{
