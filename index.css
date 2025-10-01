@@ -119,6 +119,55 @@ body {
     .description__left{
     padding-top: 4.26vh;
     }
+
+    .intro-orange-content{
+        align-items: center;
+    }
+
+    .description__price{
+        top: 28.43vh;
+        left: 6.3vh;
+    }
+
+    .description-intro>div {
+        margin-top: 7.59vh;
+        margin-bottom: 7.59vh;
+    }
+
+    .intro-feature{
+        max-width: 13.07vw;
+    }
+
+    .intro-orange-content{
+        max-width: 30.73vw;
+    }
+
+    .intro-features {
+    max-width: 20.5vw;
+    }
+
+    .collections-content{
+        margin-left: 19.06vw;
+        margin-right: 3.64vw;
+    }
+
+    .collections-button{
+        top: 10.55vh;
+        left: 4.11vw;
+    }
+
+    .advantage{
+        max-width: 14.68vw;
+    }
+
+    .orange-bottom-text{
+        position: absolute;
+    }
+
+    .collections > *{
+    margin-left: 2vw;
+    }
+
 }
 
 @media (max-width: 1120px){
@@ -140,8 +189,81 @@ body {
         margin: 2vh auto;
     }
 
+    .intro-orange{
+        margin-top: 2vh;
+    }
+
     .description__tap{
         margin: 0 auto;
+    }
+
+    .description__price{
+        top: 40%;
+        left: 30%;
+    }
+
+    .intro-orange-content{
+        align-items: top;
+    }
+
+    .description-intro>div {
+        margin-top: 2vh;
+    }
+
+    .collections {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collections-img > img{
+        max-width: 90%;
+    }
+
+    .collections-button{
+        font-size: 2vh !important;
+    }
+
+    .goods-items {
+    flex-direction: column;
+    }
+
+    .good{
+        align-items: center;
+    }
+
+    .advantages-items{
+        flex-direction: column;
+    }
+
+    .advantage{
+        margin: 2vw;
+        max-width: 60vw;
+    }
+
+    .orange-bottom-text{
+        position: relative;
+    }
+
+    .orange-footer{
+        flex-direction: column;
+    }
+
+    .orange-footer-item{
+        margin: 2vw 0;
+    }
+
+}
+
+
+@media(max-width: 500px) {
+    .description-intro{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description__tap{
+        width: 90%;
     }
 }
 
@@ -173,8 +295,8 @@ body {
 }
 
 .description__menu-content>span {
-    font-size: 1.89h;
-    line-height: 1.89h;
+    font-size: 1.89vh;
+    line-height: 1.89vh;
     margin-left: 0.78vw;
     font-family: 'PT Sans';
 }
@@ -232,8 +354,6 @@ body {
     background-color: #FF7028;
     color: white;
     position: absolute;
-    top: 28.43vh;
-    left: 6.3vh;
 }
 
 .description__tap {
@@ -248,21 +368,14 @@ body {
     justify-content: space-between;
 }
 
-.description-intro>div {
-    margin-top: 7.59vh;
-    margin-bottom: 7.59vh;
-}
-
 .intro-orange {
     font-family: 'PT Sans';
     font-size: 1.6vh;
     line-height: 2.5vh;
-    max-width: 30.73vw;
 }
 
 .intro-orange-content {
     display: flex;
-    align-items: center;
 }
 
 .intro-feature-content-title {
@@ -272,15 +385,11 @@ body {
 
 .intro-first-letter {
     font-family: 'PT Sans';
-    font-size: 5vh;
+    font-size: 5vh; 
 }
 
 .intro-first-title {
     font-weight: bold;
-}
-
-.intro-features {
-    max-width: 20.5vw;
 }
 
 .intro-feature {
@@ -294,7 +403,6 @@ body {
     line-height: 1.85vh;
     color: #7B7B7B;
     margin-left: 1.48vw;
-    min-width: 13.07vw;
 }
 
 .intro-feature-content-title {
@@ -309,6 +417,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 9.26vh;
+    align-items: center;
 }
 
 .products-title {
@@ -321,11 +430,11 @@ body {
 .products {
     display: flex;
     margin-top: 2.59vh;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .product>img {
-    min-width: 14.95vw;
+    max-width: 14.95vw;
 }
 
 .product {
@@ -350,8 +459,13 @@ body {
     justify-content: space-between;
 }
 
+.collections > *{
+    margin-left: 2vw;
+}
+
 .collections-img>img {
     max-height: 61.57vh;
+    margin: 0 auto;
     display: block;
 }
 
@@ -360,8 +474,6 @@ body {
 }
 
 .collections-content {
-    margin-left: 19.06vw;
-    margin-right: 3.64vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -407,8 +519,6 @@ body {
 
 .collections-button {
     position: absolute;
-    top: 10.55vh;
-    left: 4.11vw;
 }
 
 .collections-img-title {
@@ -513,7 +623,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 14.68vw;
 }
 
 .advantage img {
@@ -558,7 +667,6 @@ body {
 }
 
 .orange-bottom-text{
-    position: absolute;
     bottom: 0;
     left: 18.5vw;
     width: 62.5vw;
